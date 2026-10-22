@@ -1,7 +1,10 @@
 // src/reports/templates/report.template.ts
 import { CreateReportDto } from '../dto/create-report.dto';
 
-export const generateReportTemplate = (dto: CreateReportDto): string => {
+export const generateReportTemplate = (
+  dto: CreateReportDto,
+  photoUrl: string,
+): string => {
   const severityColor =
     dto.severity === 'high'
       ? 'red'
@@ -34,6 +37,15 @@ export const generateReportTemplate = (dto: CreateReportDto): string => {
           <td>${dto.reporterPhone}</td>
         </tr>
       </table>
+
+      <div style="margin-top: 20px; text-align: center;">
+        <p style="text-align: left;"><strong>Evidencia Fotográfica:</strong></p>
+        <img 
+          src="${photoUrl}" 
+          alt="Foto de la fuga de agua" 
+          style="max-width: 100%; height: auto; border-radius: 6px; border: 1px solid #ccc;" 
+        />
+      </div>
       
       <p style="margin-top: 20px; font-size: 0.9em; color: #555;">
         Sistema automatizado de notificaciones de fugas.

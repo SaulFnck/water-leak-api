@@ -23,6 +23,14 @@ export class Report {
   @Column()
   reporterPhone!: string;
 
+  //Nuevas columnas para photo en aws
+  @Column()
+  photoUrl!: string;
+
+  //Nuevas columnas para photo en aws
+  @Column({ type: 'varchar', nullable: true })
+  repairPhotoUrl!: string | null;
+
   @Column({ default: false })
   isResolved!: boolean;
 
