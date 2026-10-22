@@ -14,7 +14,7 @@ export const generateReportTemplate = (
 
   return `
     <div style="font-family: Arial, sans-serif; padding: 20px; color: #333; max-width: 600px; margin: auto;">
-      <h2 style="color: #0056b3;">🚨 Nuevo Reporte de Fuga de Agua 💧</h2>
+      <h2 style="color: #0056b3;">💧 WaterLeak -🚨  Nuevo Reporte de Fuga de Agua 🚨  </h2>
       <p>Se ha registrado un nuevo reporte en el sistema. A continuación los detalles:</p>
       
       <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
