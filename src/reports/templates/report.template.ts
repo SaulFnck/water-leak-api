@@ -32,7 +32,7 @@ export const generateReportTemplate = (
                     Water Leak Reports
                   </h1>
                   <p style="margin: 4px 0 0; font-size: 13px; color: #64748b;">
-                    Nuevo reporte de fuga registrado en el sistema
+                    Nuevo reporte de fuga registrado en el sistema [CAMBIO]
                   </p>
                 </td>
               </tr>
